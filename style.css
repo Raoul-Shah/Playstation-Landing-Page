@@ -294,7 +294,55 @@ button:hover {
 
 }
 
-    /* @media (max-width: 600px) { */
+    @media (max-width: 600px) {
 
+    .navigation li a {
+        font-size: 1.3em;
+    }
 
+    .content .imgBox {
+        position: relative;
+        max-width: 500px;
+        margin-bottom: 50px;
+    }    
 
+    .content .imgBox img {
+        width: 45%;
+    }
+
+    .colorBox {
+        transform: translateX(50px);
+    }
+
+    .content .textBox h2 {
+        font-size: 2em;
+        line-height: 1em;
+    }
+
+    .content .textBox h3 {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+
+    .content .textBox p {
+        font-size: 0.7em;
+    }
+
+    
+    .content .textBox h4 {
+      font-size: 1em;
+    }
+
+    button {
+        width: 100px;
+    }
+
+    button:hover {
+        width: 120px;
+    }
+
+    .socialMedia li a img {
+        transform: scale(0.5);
+    }
+    
+}
