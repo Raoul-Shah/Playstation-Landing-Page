@@ -176,3 +176,38 @@ button:hover {
     cursor: pointer;
 }
 
+.socialMedia {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia li {
+    list-style: none;
+}
+
+.socialMedia li a {
+    display: inline-block;
+    margin-left: 15px;
+    background: linear-gradient(#ff469f, #ff6062);;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+
+.socialMedia li a:hover {
+    background: #ff5ea2;
+    transform: translateY(-10px);
+}
+
+.socialMedia li a img {
+    filter: invert(1);
+    transform: scale(0.6);
+}
+
