@@ -211,9 +211,45 @@ button:hover {
     transform: scale(0.6);
 }
 
+
 @media (max-width: 991px) {
 
-   
+    header {
+        padding: 20px;
+    }
+
+    header .logo {
+        max-width: 60px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation.active {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#ff469f, #ff6062);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navigation li {
+        margin-bottom: 10px;
+    }
+
+    .navigation li a:hover {
+        color: #fff;
+    }
+
+    .navigation li a {
+        font-size: 1.6em;
+    }
 
     header .toggle {
         position: relative;
@@ -224,7 +260,7 @@ button:hover {
         background-position: center;
         background-repeat: no-repeat;
         cursor: pointer;
-        z-index: 100;
+        z-index: 200;
     }
 
     header .toggle.active {
@@ -232,6 +268,28 @@ button:hover {
         background-size: 25px;
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .content .imgBox {
+        position: relative;
+        max-width: 600px;
+        margin-bottom: 50px;
+    }
+
+    .content .imgBox img {
+        width: 77%;
+    }
+
+    .colorBox {
+        transform: translateX(75px);
+    }
+
+    .textBox {
+        margin-bottom: 50px;
     }
 
 }
